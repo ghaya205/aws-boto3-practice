@@ -61,15 +61,11 @@ from botocore.exceptions import ClientError, NoCredentialsError
 def main():
     try:
         show_identity()
-        print('================================')
+        
         show_region()
-        print('================================')
         list_buckets_with_client()
-        print('================================')
         list_buckets_with_resource()
-        print('================================')
         list_instances()
-        print('================================')
         list_regions()
 
     except NoCredentialsError:
